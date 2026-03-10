@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的個人網站</title>
+  <title>廖柏翔｜個人網站</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, "Noto Sans TC", sans-serif;
       background: #f7f7f7;
       color: #222;
+      line-height: 1.6;
     }
 
     header {
@@ -19,11 +20,19 @@
       text-align: center;
     }
 
+    header p {
+      margin: 8px 0 0;
+      font-size: 18px;
+    }
+
     nav {
       background: white;
       border-bottom: 1px solid #ddd;
       text-align: center;
       padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     nav a {
@@ -31,6 +40,10 @@
       text-decoration: none;
       color: #1f3c88;
       font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
@@ -53,10 +66,24 @@
       width: 100%;
       border-radius: 12px;
       margin-bottom: 20px;
+      object-fit: cover;
     }
 
     h1, h2, h3 {
       margin-top: 0;
+    }
+
+    h2 {
+      color: #1f3c88;
+      border-bottom: 2px solid #e9eef9;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 12px;
+      color: #333;
     }
 
     section {
@@ -66,24 +93,45 @@
     ul {
       padding-left: 20px;
     }
+
     .timeline {
       list-style: none;
       padding-left: 0;
+      margin: 0;
     }
-    
+
     .timeline li {
       display: grid;
-      grid-template-columns: 150px 1fr;
-      margin-bottom: 10px;
+      grid-template-columns: 160px 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+      align-items: start;
     }
-    
+
     .timeline .time {
       font-weight: bold;
       color: #555;
+      white-space: nowrap;
     }
-    
+
     .timeline .desc {
-      line-height: 1.5;
+      line-height: 1.6;
+    }
+
+    .sidebar p {
+      margin: 10px 0;
+      word-break: break-word;
+    }
+
+    .sidebar a,
+    .content a {
+      color: #1f3c88;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover,
+    .content a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -97,15 +145,24 @@
       .container {
         grid-template-columns: 1fr;
       }
+
+      .timeline li {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 10px;
+      }
     }
   </style>
-
 </head>
 <body>
 
   <header>
     <h1>廖柏翔</h1>
-    <p> 主治醫師 / 臺北榮民總醫院 </p>
+    <p>主治醫師 / 臺北榮民總醫院</p>
   </header>
 
   <nav>
@@ -118,10 +175,11 @@
   <div class="container">
     <div class="sidebar">
       <img src="profile.jpg" alt="個人照片" class="profile-img">
+
       <h2>基本資訊</h2>
       <p><strong>Name:</strong> 廖柏翔 (Liao, Po-Hsiang)</p>
-      <p><strong>Affiliation:</strong> 急診部</p>
-      <p><strong>Email:</strong> phliao@vghtpe.gov.tw</p>
+      <p><strong>Affiliation:</strong> 急診部，臺北榮民總醫院</p>
+      <p><strong>Email:</strong> <a href="mailto:phliao@vghtpe.gov.tw">phliao@vghtpe.gov.tw</a></p>
       <p><strong>GitHub:</strong> <a href="https://github.com/你的帳號" target="_blank">你的帳號</a></p>
     </div>
 
@@ -129,7 +187,7 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          (自我介紹)
+          （請在這裡填入自我介紹，例如臨床專長、研究興趣、目前職位與合作方向。）
         </p>
 
         <h3>Education</h3>
@@ -153,7 +211,7 @@
             </span>
           </li>
         </ul>
-      
+
         <h3>Experience</h3>
         <ul class="timeline">
           <li>
@@ -182,9 +240,9 @@
       <section id="research">
         <h2>Research</h2>
         <ul>
-          <li>研究方向 1</li>
-          <li>研究方向 2</li>
-          <li>研究方向 3</li>
+          <li>急診醫學</li>
+          <li>臨床流行病學</li>
+          <li>醫療資料分析</li>
         </ul>
       </section>
 
@@ -198,13 +256,14 @@
 
       <section id="contact">
         <h2>Contact</h2>
-        <p>有任何合作或聯繫需求，歡迎來信。</p>
+        <p>有任何合作、研究交流或聯繫需求，歡迎來信。</p>
+        <p>Email: <a href="mailto:phliao@vghtpe.gov.tw">phliao@vghtpe.gov.tw</a></p>
       </section>
     </div>
   </div>
 
   <footer>
-    © 2026 你的名字
+    © 2026 廖柏翔
   </footer>
 
 </body>
