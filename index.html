@@ -66,6 +66,25 @@
     ul {
       padding-left: 20px;
     }
+    .timeline {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .timeline li {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      margin-bottom: 10px;
+    }
+    
+    .timeline .time {
+      font-weight: bold;
+      color: #555;
+    }
+    
+    .timeline .desc {
+      line-height: 1.5;
+    }
 
     footer {
       text-align: center;
@@ -80,6 +99,7 @@
       }
     }
   </style>
+
 </head>
 <body>
 
@@ -135,12 +155,27 @@
         </ul>
       
         <h3>Experience</h3>
-        <ul>
-          <li>02/2015 – 06/2015 — 美國約翰霍普金斯大學臨床與實驗室見習</li>
-          <li>07/2018 – 12/2022 — 臺北榮民總醫院急診部住院醫師訓練</li>
-          <li>01/2023 – &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — 升任臺北榮民總醫院急診部主治醫師</li>
-          <li>01/2023 – &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — 獲頒教育部講師/兼任國立陽明交通大學醫學院醫學系</li>
-          <li>09/2024 – &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — 聘任台北市消防局醫療指導醫師</li>          
+        <ul class="timeline">
+          <li>
+            <span class="time">02/2015 – 06/2015</span>
+            <span class="desc">美國約翰霍普金斯大學臨床與實驗室見習</span>
+          </li>
+          <li>
+            <span class="time">07/2018 – 12/2022</span>
+            <span class="desc">臺北榮民總醫院急診部住院醫師訓練</span>
+          </li>
+          <li>
+            <span class="time">01/2023 – </span>
+            <span class="desc">升任臺北榮民總醫院急診部主治醫師</span>
+          </li>
+          <li>
+            <span class="time">01/2023 – </span>
+            <span class="desc">獲頒教育部講師 / 兼任國立陽明交通大學醫學院醫學系</span>
+          </li>
+          <li>
+            <span class="time">09/2024 – </span>
+            <span class="desc">聘任台北市消防局醫療指導醫師</span>
+          </li>
         </ul>
       </section>
 
