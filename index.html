@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的個人網站</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    header {
+      background: #1f3c88;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1f3c88;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .sidebar, .content {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .profile-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>你的名字</h1>
+    <p>你的職稱 / 單位 / 研究領域</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publication">Publications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="sidebar">
+      <img src="profile.jpg" alt="個人照片" class="profile-img">
+      <h2>基本資訊</h2>
+      <p><strong>Name:</strong> 你的名字</p>
+      <p><strong>Affiliation:</strong> 你的單位</p>
+      <p><strong>Email:</strong> your_email@example.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/你的帳號" target="_blank">你的帳號</a></p>
+    </div>
+
+    <div class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          這裡放你的自我介紹。你可以寫你的背景、研究興趣、目前在做什麼，
+          或者你想讓別人一進網站就知道的資訊。
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+        <ul>
+          <li>研究方向 1</li>
+          <li>研究方向 2</li>
+          <li>研究方向 3</li>
+        </ul>
+      </section>
+
+      <section id="publication">
+        <h2>Publications</h2>
+        <ul>
+          <li>Paper Title A, Journal, 2025</li>
+          <li>Paper Title B, Conference, 2024</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>有任何合作或聯繫需求，歡迎來信。</p>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 你的名字
+  </footer>
+
+</body>
+</html>
