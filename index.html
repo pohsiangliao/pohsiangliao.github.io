@@ -5,126 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>廖柏翔 | About</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
-      background: #f7f7f7;
-      color: #222;
-      line-height: 1.8;
-    }
-    header {
-      background: #1f3c88;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin-bottom: 8px;
-      font-size: 36px;
-    }
-    header p {
-      margin: 0;
-      font-size: 18px;
-    }
-    nav {
-      background: white;
-      border-bottom: 1px solid #ddd;
-      text-align: center;
-      padding: 12px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #1f3c88;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 30px;
-      padding: 0 20px;
-    }
-    .sidebar, .content {
-      background: white;
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    }
-    .profile-img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      object-fit: cover;
-    }
-    h1, h2, h3 {
-      margin-top: 0;
-    }
-    h2 {
-      color: #1f3c88;
-      margin-bottom: 16px;
-    }
-    h3 {
-      margin-top: 28px;
-      margin-bottom: 12px;
-      color: #333;
-    }
-    section {
-      margin-bottom: 36px;
-    }
-    a {
-      color: #1f3c88;
-    }
-    .timeline {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    .timeline li {
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 12px;
-      margin-bottom: 12px;
-      align-items: start;
-    }
-    .timeline .time {
-      font-weight: bold;
-      color: #555;
-      white-space: nowrap;
-    }
-    .timeline .desc {
-      line-height: 1.6;
-    }
-    .contact-links p {
-      margin: 8px 0;
-      word-break: break-word;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #666;
-      font-size: 14px;
-    }
-    
-    @media (max-width: 900px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-      .timeline li {
-        grid-template-columns: auto 1fr;
-        gap: 4px;
-      }
-      nav a {
-        display: inline-block;
-        margin: 6px 10px;
-      }
+    body { margin: 0; font-family: Arial, "Noto Sans TC", sans-serif; background: #f7f7f7; color: #222; line-height: 1.6; }
+    header { background: #1f3c88; color: white; padding: 40px 20px; text-align: center; }
+    header h1 { margin-bottom: 8px; font-size: 36px; }
+    header p { margin: 0; font-size: 18px; }
+    nav { background: white; border-bottom: 1px solid #ddd; text-align: center; padding: 12px 0; position: sticky; top: 0; z-index: 100; }
+    nav a { margin: 0 15px; text-decoration: none; color: #1f3c88; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: 30px auto; display: grid; grid-template-columns: 280px 1fr; gap: 30px; padding: 0 20px; }
+    .sidebar, .content { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .profile-img { width: 100%; border-radius: 12px; margin-bottom: 20px; object-fit: cover; }
+    h1, h2, h3 { margin-top: 0; }
+    h2 { color: #1f3c88; margin-bottom: 16px; }
+    a { color: #1f3c88; }
+    .timeline { list-style: none; padding-left: 0; margin: 0; }
+    .timeline li { display: grid; grid-template-columns: 160px 1fr; gap: 12px; margin-bottom: 12px; align-items: start; }
+    .timeline .time { font-weight: bold; color: #555; white-space: nowrap; }
+    .timeline .desc { line-height: 1.6; }
+    .contact-links p { margin: 8px 0; word-break: break-word; }
+    footer { text-align: center; padding: 30px 20px; color: #666; font-size: 14px; }
+
+    @media (max-width: 768px) {
+      .container { grid-template-columns: 1fr; }
+      .timeline li { grid-template-columns: 1fr; gap: 4px; }
+      nav a { display: inline-block; margin: 6px 10px; }
     }
   </style>
 </head>
@@ -204,9 +108,7 @@
     </main>
   </div>
 
-  <footer>
-    © 2026 廖柏翔
-  </footer>
+  <footer>© 2026 廖柏翔</footer>
 
 </body>
 </html>
