@@ -7,10 +7,10 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, "Noto Sans TC", sans-serif;
+      font-family: Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
       background: #f7f7f7;
       color: #222;
-      line-height: 1.6;
+      line-height: 1.8;
     }
     header {
       background: #1f3c88;
@@ -113,13 +113,13 @@
       font-size: 14px;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .container {
         grid-template-columns: 1fr;
       }
       .timeline li {
-        grid-template-columns: 1fr;
-        gap: 4px;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
       }
       nav a {
         display: inline-block;
